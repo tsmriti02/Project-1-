@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness is a Journey</title>
+    <link rel="stylesheet" href="Gym.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset  */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url(picture\ .jpg);
+            color: blue;
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            top: 20px;
+            left: 54px;
+        }
+
+        .left img {
+            width: 120px;
+            height: 80px;
+            /* to change color of image from black to white CSS INVERT function is used  */
+        }
+
+        .left div {
+            text-align: center;
+            font-family: 'Pattaya', sans-serif;
+            line-height: 10px;
+            font-size: 20px;
+        }
+
+        .mid {
+            /* border: 2px solid red; */
+            display: block;
+            width: 36%;
+            margin: 20px auto;
+            /* to place any element in center display should be block and width should be given and mardin aauto need to be done   */
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid red; */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: rgb(17, 108, 212);
+            text-decoration: none;
+            padding: 5px 5px;
+            font-family: 'Pattaya', sans-serif;
+            font-size: 25px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: purple;
+        }
+
+        .btn {
+            margin: 3px 5px;
+            background-color: rgb(6, 149, 216);
+            color: white;
+            padding: 5px 20px;
+            border: 2px solid grey;
+            border-radius: 12px;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: 'Pattaya', sans-serif;
+        }
+
+        .btn:hover {
+            background-color: rgb(129, 129, 129);
+        }
+
+        .container {
+            border: 2px solid red;
+            margin: 15px 15px;
+            padding: 25px 25px;
+            width: 30%;
+            border-radius: 15px;
+            border-color: rgb(74, 74, 252);
+            float: right;
+
+        }
+
+        .fromgroup input {
+            text-align: center;
+            display: block;
+            width: 250px;
+            padding: 15px;
+            border: 2px solid grey;
+            border-radius: 20px;
+            font: 20px;
+            margin: 5px auto;
+            font-family: 'Pattaya', sans-serif;
+        }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 250px;
+        margin: auto;
+    }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- for logo  -->
+            <img src="logofinal.png" alt="logo">
+            <div>Fitness with Sumo</div>
+        </div>
+        <div class="mid">
+            <!-- for navigation  -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Plans</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- for buttons  -->
+            <button class="btn">Call US</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join Us Now!!!</h1>
+        <form action="noaction.php">
+            <!-- since we don't have backend -->
+            <div class="fromgroup">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="fromgroup">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="fromgroup">
+                <input type="text" name="" placeholder="Enter Your Phone Number">
+            </div>
+            <div class="fromgroup">
+                <input type="text" name="" placeholder="Enter Your Email">
+            </div>
+            <div class="fromgroup">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <button class="btn">Sumit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
